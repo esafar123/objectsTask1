@@ -109,11 +109,14 @@ console.log(Movies1994(movies));
   ********************************/
   
 function updat (arr){
-    const newist = arr.map ((x) => {if (x.title === "The Dark Knight"){x.genre = "Action/Drama"};     // why here in x.genre we put only one = ????
+    const newist = arr.map ((x) => {
+        if (x.title === "The Dark Knight"){
+        x.genre = "Action/Drama"
+    };     // why here in x.genre we put only one = ????
     return x
 });
 console.log(newist);
-return newist;
+
 }
 updat(movies)
 
